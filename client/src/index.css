@@ -1,0 +1,550 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+html {
+  font-family: Quicksand;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: block;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.body .body-title {
+  width: 90%;
+  height: 10%;
+  align-items: center;
+  justify-content: center;
+}
+
+.clear {
+  clear: both !important;
+}
+
+.colum1 {
+  width: 55%;
+  margin: 28px 12px;
+}
+
+.colum2 {
+  width: 44%;
+  margin-top: 66px;
+}
+
+.web {
+  /* background-color: #FFC0D9; */
+  background-image: linear-gradient(to right bottom, #e68cb0, hsl(336, 53%, 83%));
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 20px;
+}
+
+.nav {
+  width: 25%;
+  height: 90%;
+  border-radius: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(240, 236, 236);
+}
+
+.nav .nav-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.nav .nav-header .user-icon {
+  margin-right: 20px;
+}
+
+.nav .nav-header .user-icon img {
+  width: 70px;
+  height: 70px;
+  background-color: #ffc0d9;
+  border-radius: 35px;
+}
+
+.nav .nav-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav .nav-body button {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.body {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  background-color: rgb(240, 236, 236);
+  margin: 20px;
+  border-radius: 20px;
+  padding: 0 20px;
+  position: relative;
+}
+
+.tittle-all {
+  font-size: 32px;
+  /* margin: 10px 0; */
+  margin-top: -30px;
+  color: rgb(10, 10, 100);
+}
+
+.appointment {
+  display: flex;
+  justify-content: space-between;
+}
+
+.minmax {
+  display: flex;
+  justify-content: space-between;
+}
+
+.box1 {
+  padding: 12px 8px;
+  border-radius: 16px;
+  background-color: #fff;
+  min-height: 96px;
+  justify-content: space-between;
+}
+
+.box2 {
+  border-radius: 12px;
+  padding: 16px 12px;
+  background-color: #fff;
+  margin: 18px 0;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+canvas {
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 1rem;
+}
+
+
+.total {
+  position: absolute;
+  display: flex;
+  margin-right: 20px;
+  margin-top: 20px;
+  justify-content: space-between;
+  right: 0;
+}
+
+.total-atribute {
+  /* width: 45%;
+  margin: 24px 0; */
+  margin-right: 21px;
+  text-align: center;
+  width: 180px;
+}
+
+.balance {
+  margin: 0 auto;
+}
+
+.total-info {
+  font-size: 24px;
+  color: rgb(10, 10, 100);
+}
+
+.total-money {
+  font-size: 32px;
+  color: rgb(73, 23, 119);
+}
+
+.green {
+  color: rgb(13, 190, 13);
+}
+
+.red {
+  color: red;
+}
+
+.blue {
+  color: rgba(22, 22, 170, 0.493);
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.recent {
+  font-size: 16px;
+  color: rgb(10, 10, 100);
+}
+
+.space {
+  margin-top: 10px;
+}
+
+.salary {
+  font-size: 24px;
+}
+
+.size {
+  margin-top: 24px;
+  font-size: 32px;
+}
+
+/* incomeCss */
+
+.body .income {
+  height: 85%;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 104px;
+  margin-top: 30px;
+}
+
+.body .income .body-title h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin: 0 auto;
+  margin-top: -14px
+}
+
+.body .income .total-income {
+  width: 100%;
+  height: 12%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 20px;
+}
+
+.body .income .total-income p {
+  margin: 0;
+  padding: 0;
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+
+.body .income .income-body {
+  display: flex;
+  width: 100%;
+  height: 90%;
+  margin-top: 12px;
+}
+
+.body .income .income-body .form-submit-income {
+  width: 35%;
+  height: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-right: 20px;
+}
+
+.body .income .income-body .form-submit-income form {
+  display: flex;
+  flex-direction: column;
+}
+
+.body .income .income-body .form-submit-income label {
+  margin-bottom: 5px;
+}
+
+.body .income .income-body .form-submit-income input,
+.body .income .income-body .form-submit-income select,
+.body .income .income-body .form-submit-income textarea {
+  margin-bottom: 10px;
+  padding: 8px;
+  box-sizing: border-box;
+  color: rgb(139, 139, 139);
+  border-color: white;
+  background-color: rgb(240, 236, 236);
+  border-radius: 5px;
+  border-width: 2px;
+}
+
+.body .income .income-body .form-submit-income button {
+  width: 150px;
+  background-color: #e68cb0;
+  color: #000;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 30px;
+  display: block;
+  margin: 0 auto;
+}
+
+.body .income .income-body .form-submit-income button:hover {
+  background-color: hsl(336, 53%, 83%);
+  color: #fff;
+}
+
+.body .income .income-body .card-body {
+  width: 70%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+}
+
+.body .income .income-body .card-body .card {
+  flex: 0.2;
+  padding: 10px;
+  box-sizing: border-box;
+  margin: 9px 10px 0 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  border: none;
+  display: flex;
+  align-items: center;
+}
+
+.body .income .income-body .card-body .card .card-icon img {
+  width: 25px;
+  height: 25px;
+  margin: 0 10px;
+}
+
+.body .income .income-body .card-body .card .card-text .about {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.body .income .income-body .card-body .card .card-text .about .p1 {
+  margin-right: 15px;
+  margin-left: 5px;
+}
+
+.body .income .income-body .card-body .card .card-text .about .p2 {
+  margin-right: 15px;
+
+}
+
+.body .income .income-body .card-body .card .card-text .about .p3 {
+  margin-right: 15px;
+
+}
+
+/* expenseCss */
+
+.body .expense {
+  height: 85%;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 104px;
+  margin-top: 30px;
+}
+
+.body .expense .body-title h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin: 0 auto;
+  margin-top: -14px
+}
+
+.body .expense .total-expense {
+  width: 100%;
+  height: 12%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 20px;
+}
+
+.body .expense .total-expense p {
+  margin: 0;
+  padding: 0;
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+
+.body .expense .expense-body {
+  display: flex;
+  width: 100%;
+  height: 90%;
+  margin-top: 12px;
+}
+
+.body .expense .expense-body .form-submit-expense {
+  width: 35%;
+  height: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-right: 20px;
+}
+
+.body .expense .expense-body .form-submit-expense form {
+  display: flex;
+  flex-direction: column;
+}
+
+.body .expense .expense-body .form-submit-expense label {
+  margin-bottom: 5px;
+}
+
+.body .expense .expense-body .form-submit-expense input,
+.body .expense .expense-body .form-submit-expense select,
+.body .expense .expense-body .form-submit-expense textarea {
+  margin-bottom: 10px;
+  padding: 8px;
+  box-sizing: border-box;
+  color: rgb(139, 139, 139);
+  border-color: white;
+  background-color: rgb(240, 236, 236);
+  border-radius: 5px;
+  border-width: 2px;
+}
+
+.body .expense .expense-body .form-submit-expense button {
+  width: 150px;
+  background-color: #e68cb0;
+  color: #000;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 30px;
+  display: block;
+  margin: 0 auto;
+}
+
+.body .expense .expense-body .form-submit-expense button:hover {
+  background-color: hsl(336, 53%, 83%);
+  color: #fff;
+}
+
+.body .expense .expense-body .card-body {
+  width: 70%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+}
+
+.body .expense .expense-body .card-body .card {
+  flex: 0.2;
+  padding: 10px;
+  box-sizing: border-box;
+  margin: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  border: none;
+  display: flex;
+  align-items: center;
+}
+
+.body .expense .expense-body .card-body .card .card-icon img {
+  width: 25px;
+  height: 25px;
+  margin: 0 10px;
+}
+
+.body .expense .expense-body .card-body .card .card-text .about {
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+}
+
+.body .expense .expense-body .card-body .card .card-text .about .p1 {
+  margin-right: 15px;
+  margin-left: 5px;
+}
+
+.body .expense .expense-body .card-body .card .card-text .about .p2 {
+  margin-right: 15px;
+
+}
+
+.history-item {
+  background: #fff;
+  border: 2px solid #FFFFFF;
+  box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.06);
+  padding: 1rem;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.input-control input {
+  width: 100%;
+}
+
+/* userinfor here */
+.userbody {
+  width: 90%;
+  height: 90%;
+  /* display: flex; */
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgb(240, 236, 236);
+  margin: 20px;
+  border-radius: 20px;
+  position: relative;
+}
+
+.userbody .userbody-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 90px;
+  width: 90%;
+  height: 10%;
+  margin-left: 50px;
+  margin-top: 20px;
+}
+
+.userbody .userbody-text {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  margin-left: 300px;
+  margin-bottom: 300px;
+
+}
+
+.userbody .userbody-text .useravatar {
+  margin-right: 20px;
+}
+
+.userbody .userbody-text .useravatar img {
+  width: 70px;
+  /* Điều chỉnh kích thước ảnh avatar */
+  height: 70px;
+  border-radius: 50%;
+  /* Làm tròn ảnh */
+}
+
+.userbody .userbody-text .userdetails {
+  flex-grow: 1;
+}
+
+.userbody .userbody-text .userdetails p {
+  margin-bottom: 5px;
+}
+
+.userbody .userbody-text .userdetails p p2 {
+  border: 1px solid #0000;
+  width: 100px;
+  height: 100px;
+}
